@@ -1,8 +1,8 @@
 import "../../components/Host/host.scss"
 
 export default function Host({ host }) {
-   const splittedHost = host.name.split(' ')
-   const [name, lastname] = splittedHost
+   const hostName = host.name.split(' ')
+   const [name, lastname] = hostName
    return (
       <div className="host">
          <div className="host_name">
