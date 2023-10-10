@@ -1,0 +1,20 @@
+@import '../../../sass/index.scss';
+
+
+.about {
+    margin: 0 5%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    row-gap: 20px;
+ }
+ .dropdowns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    @include media-query(small) {
+       margin: 0 5%;
+    }
+ }
+ 

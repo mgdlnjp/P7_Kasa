@@ -1,0 +1,62 @@
+@import '../../sass/index.scss';
+
+.dropdown {
+   display: flex;
+   flex-direction: column;
+   &__button {
+      position: relative;
+      z-index: 99;
+      padding: 10px;
+      display: flex;
+      background-color: $primary;
+      flex-direction: row;
+      align-items: center;
+      border-radius: 5px;
+      border: none;
+      justify-content: space-between;
+      height: 37px;
+      @include media-query(medium) {
+         height: 46px;
+         border-radius: 8px;
+      }
+      @include media-query(large) {
+         height: 52px;
+         border-radius: 10px;
+      }
+      &__title {
+         color: $white;
+         font-weight: 500;
+         font-size: 16px;
+         @include media-query(medium) {
+            font-size: 18px;
+         }
+         @include media-query(large) {
+            font-size: 18px;
+         }
+      }
+      &__chevron {
+         font-size: xx-large;
+         color: $white;
+         display: flex;
+      }
+   }
+   &__infos {
+      z-index: 1;
+      position: relative;
+      padding: 10px;
+      padding-top: 37px;
+      margin-top: -12px;
+      color: $primary;
+      font-weight: 400;
+      background-color: $secondary;
+      background-color: $secondary;
+      border-radius: 15px;
+      line-height: 20px;
+      @include media-query(medium) {
+         line-height: 25.5px;
+      }
+   }
+   &__hidden {
+      display: none;
+   }
+}
