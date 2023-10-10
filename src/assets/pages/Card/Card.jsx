@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom'
 import { Navigate } from "react-router-dom";
 import products from '../../../assets/data/logements.json'
 import Rating from '../../../components/Rating/Rating'
-import Owner from '../../../components/Owner/Owner'
+import Host from '../../../components/Host/Host'
 import Dropdown from '../../../components/Dropdown/Dropdown'
 import Tags from '../../../components/Tags/Tags'
 import Carousel from '../../../components/Carousel/Carousel'
@@ -34,7 +34,7 @@ export default function Card() {
             </div>
             <div className="provider">
                <Rating score={selectedItem.rating} />
-               <Owner host={selectedItem.host} />
+               <Host host={selectedItem.host} />
             </div>
          </div>
          <div className="drops">

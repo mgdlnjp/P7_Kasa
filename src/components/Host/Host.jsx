@@ -5,12 +5,12 @@ export default function Host({ host }) {
    const [name, lastname] = splittedHost
    return (
       <div className="host">
-         <div className="host">
-            <p className="host">{name.trim()}</p>
-            <p className="host">{lastname.trim()}</p>
+         <div className="host_name">
+            <p className="host__firstname">{name.trim()}</p>
+            <p className="host__lastname">{lastname.trim()}</p>
          </div>
 
-         <img src={host.picture} alt="" className="host" />
+         <img src={host.picture} alt="" className="host__picture" />
       </div>
    )
 }
