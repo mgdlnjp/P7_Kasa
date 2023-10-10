@@ -5,7 +5,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 
 import '../../components/Header/header.scss';
 
-export default function Navbar() {
+export default function Header() {
    const location = useLocation()
    const [activePage, setActivePage] = useState(location.pathname)
    useEffect(() => {
