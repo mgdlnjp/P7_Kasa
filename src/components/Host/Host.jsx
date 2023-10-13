@@ -1,6 +1,6 @@
 import "../../components/Host/host.scss"
 
-export default function Host({ host }) {
+export default function Host({ host }) { //Renvoie à l'attibut host affiché dans Card
    const hostName = host.name.split(' ')
    const [name, lastname] = hostName
    return (

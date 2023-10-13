@@ -6,7 +6,7 @@ import "./app.scss"
 
 function App() {
   return (
-<Router/>
+<Router/> //Renvoie vers les routes de l'application 
   );
 }
 

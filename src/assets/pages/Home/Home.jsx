@@ -4,7 +4,7 @@ import image from "./home-banner.png";
 
 import "./home.scss";
 
-const text = "Chez vous, partout et ailleurs";
+const text = "Chez vous, partout et ailleurs"; //Utilisation fonction en cas de modification du text ou utilisation de celui-ci autre part
 export default function Home() {
   return (
     <div className="home">

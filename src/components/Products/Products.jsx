@@ -10,7 +10,7 @@ export default function Products() {
       {logements.map((logement) => {
         return (
           <article key={logement.id} className="articles">
-            <Link to={`/products/${logement.id}`}>
+            <Link to={`/products/${logement.id}`}>{/* Affichera au click le lien avec l'id du logement à la fin */}
               <Thumbnails image={logement.cover} title={logement.title} />
             </Link>
           </article>

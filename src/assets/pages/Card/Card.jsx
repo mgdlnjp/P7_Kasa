@@ -10,10 +10,10 @@ import Carousel from '../../../components/Carousel/Carousel'
 import "../Card/card.scss"; 
 
 export default function Card() {
-   const list = JSON.stringify(products)
-   const { id } = useParams()
-   const parsedList = JSON.parse(list)
-   const selectedItem = parsedList.find((item) => item.id === id)
+   const list = JSON.stringify(products) //Récupère le JSON sous forme de string
+   const { id } = useParams() //Utilise les paramètres de l'ID demandé
+   const parsedList = JSON.parse(list) //Afficihe le JSON sous forme d'une liste
+   const selectedItem = parsedList.find((item) => item.id === id) //Trouve la valeur du nom demandé, en rapport avec l'id du logement 
 
    if (!selectedItem) {
       return <Navigate replace to="/404" />
@@ -24,7 +24,7 @@ export default function Card() {
          <Carousel pictures={pictures} />
          <div className="details">
             <div className="prod">
-               <h1 className="prod__title">{selectedItem.title} </h1>
+               <h1 className="prod__title">{selectedItem.title} </h1> 
                <h2 className="prod__location">{selectedItem.location}</h2>
                <div className="prod__tags">
                   {selectedItem.tags.map((tag, index) => (
@@ -33,7 +33,7 @@ export default function Card() {
                </div>
             </div>
             <div className="provider">
-               <Rating score={selectedItem.rating} />
+               <Rating rating={selectedItem.rating} />
                <Host host={selectedItem.host} />
             </div>
          </div>

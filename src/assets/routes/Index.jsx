@@ -7,9 +7,10 @@ import About from "../pages/About/About";
 import LayoutBlank from "../layout/LayoutBlank";
 import LayoutDefault from "../layout/LayoutDefault";
 
-const Router = () => {
+const Router = () => { // Affichage de la page d'acceuil classique ou Re-routage vers une page en cas d'erreur 
   return (
     <BrowserRouter>
+
       <Routes>
         <Route element={<LayoutDefault />}>
           <Route exact path="/" element={<Home />} />
@@ -17,11 +18,12 @@ const Router = () => {
           <Route path="/about" element={<About />} />
         </Route>
 
-        <Route element={<LayoutBlank />}>
+        <Route element={<LayoutBlank />}> 
           <Route path="*" element={<Error />} />
           <Route path="/404" element={<Error />} />
         </Route>
       </Routes>
+
     </BrowserRouter>
   );
 };

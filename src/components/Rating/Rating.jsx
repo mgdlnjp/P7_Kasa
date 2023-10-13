@@ -3,12 +3,12 @@ import fullStar from './fullStar.svg'
 
 import "../../components/Rating/rating.scss"
 
-export default function Rating({ score }) {
+export default function Rating({ rating }) { //Renvoie à l'attibut rating affiché dans Card
    const stars = [1, 2, 3, 4, 5]
    return (
       <div className="rate-comp">
          {stars.map((level) =>
-            score >= level ? (
+            rating >= level ? (
                <img
                   key={level.toString()}
                   className="star"

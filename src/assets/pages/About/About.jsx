@@ -14,7 +14,7 @@ function About() {
       <div className="about">
          <Banner title="" imageUrl={imageSwitch} height="223px" />
          <div className="dropdowns">
-            {kasaValues.map((kasaValue) => (
+            {kasaValues.map((kasaValue) => ( //Récupération et organisation des datas dans le JSON pour le Dropdown
                <Dropdown
                   key={kasaValue.id}
                   title={kasaValue.title}

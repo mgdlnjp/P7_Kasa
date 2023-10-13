@@ -1,6 +1,6 @@
 import "../../components/Thumbnails/thumbnails.scss"
 
-export default function Thumbnails({ image, title }) {
+export default function Thumbnails({ image, title }) {//Renvoie les attributs dans Products
    return (
       <div className="thumb">
          <img src={image} alt="" className="thumb__img" />

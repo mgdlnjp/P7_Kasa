@@ -6,7 +6,7 @@ export default function LayoutDefault() {
    return (
       <>
          <Header/>
-         <Outlet />
+         <Outlet /> {/* Element qui permet l'affichage du corps de la page LayoutDefault provenant du Router */}
          <Footer /> 
       </>
    )
