@@ -7,7 +7,7 @@ import About from "../pages/About/About";
 import LayoutBlank from "../layout/LayoutBlank";
 import LayoutDefault from "../layout/LayoutDefault";
 
-const Router = () => { // Affichage de la page d'acceuil classique ou Re-routage vers une page en cas d'erreur 
+const Router = () => { //Affichage de la page d'acceuil classique ou Re-routage vers une page en cas d'erreur 
   return (
     <BrowserRouter>
 

@@ -6,7 +6,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import '../../components/Header/header.scss';
 
 export default function Header() {
-   const location = useLocation()//URL affichée dans la barra d'adresse
+   const location = useLocation()//URL affichée dans la barre d'adresse
    const [activePage, setActivePage] = useState(location.pathname)//Valide la fonction suivente
    useEffect(() => {//Active le nom de la page qui va s'afficher
       setActivePage(location.pathname)
