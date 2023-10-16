@@ -7,7 +7,7 @@ import '../../components/Header/header.scss';
 
 export default function Header() {
    const location = useLocation()//URL affichée dans la barre d'adresse
-   const [activePage, setActivePage] = useState(location.pathname)//Valide la fonction suivente
+   const [activePage, setActivePage] = useState(location.pathname)//Valide la fonction suivante
    useEffect(() => {//Active le nom de la page qui va s'afficher
       setActivePage(location.pathname)
    }, [location])
