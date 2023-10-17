@@ -1,6 +1,6 @@
 import '../../components/Banner/banner.scss';
 
-export default function Banner({ title, imageUrl, height }) { //Renvoie à l'attibut Tag affiché dans Home
+export default function Banner({ title, imageUrl, height }) { //Renvoie aux attibuts affichés dans Home
   return (
     <div
       className="banner"
